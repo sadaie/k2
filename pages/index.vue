@@ -219,7 +219,7 @@ export default Vue.extend({
               break
           }
 
-          const tweetButton = `<a id="tweet-button" href="https://twitter.com/intent/tweet?text=${title}は${resultLabel.textContent}%0a@sadaie_p%20さんから%0a%0a&url=https://kokudaka.matsuri-hi.me/&hashtags=あなたの石高,徳川まつり,imas_ml" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="uk-button bg-matsuri-iro uk-margin-left">ツイートする</a>`
+          const tweetButton = `<a id="tweet-button" href="https://twitter.com/intent/tweet?text=${title}は${resultLabel.textContent}%0a@sadaie_p%20さんから%0a%0a&url=https://kokudaka2.matsuri-hi.me/&hashtags=あなたの石高,徳川まつり,imas_ml" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="uk-button bg-matsuri-iro uk-margin-left">ツイートする</a>`
           closeButton.insertAdjacentHTML('afterend', tweetButton)
         }
         UIKit.modal(modal).show()
